@@ -5,11 +5,47 @@
     <link rel="icon" href="/Joker/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>谁是小丑</title>
-    <script type="module" crossorigin src="/Joker/assets/index-ab3245fe.js"></script>
+    <script type="module" crossorigin src="/Joker/assets/index-df9476be.js"></script>
     <link rel="stylesheet" href="/Joker/assets/index-e0182f4b.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="loading-box">
+       <img src="/Joker/assets/b-329b543e.png" class="loading" alt="">
+       </div>
+    </div>
     
   </body>
 </html>
+<style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+  
+    .loading-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .loading {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      animation: rotate 1.3s linear infinite;
+    }
+  
+    @keyframes rotate {
+      to {
+transform: rotate(360deg) scale(3);
+}
+}
+  </style>
